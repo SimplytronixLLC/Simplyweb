@@ -1,0 +1,1152 @@
+[
+    {
+        "id": 191,
+        "keyword": "LM3*",
+        "offset": 5050,
+        "is_completed": 0,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:34:30",
+        "status": "pending",
+        "last_run_at": "2026-07-07 04:33:29"
+    },
+    {
+        "id": 192,
+        "keyword": "LM7*",
+        "offset": 750,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:34:00",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:33:39"
+    },
+    {
+        "id": 193,
+        "keyword": "LM78*",
+        "offset": 100,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:34:03",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:34:00"
+    },
+    {
+        "id": 194,
+        "keyword": "LM79*",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:34:06",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:34:03"
+    },
+    {
+        "id": 195,
+        "keyword": "LT1*",
+        "offset": 5100,
+        "is_completed": 0,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:34:24",
+        "status": "pending",
+        "last_run_at": "2026-07-07 04:34:06"
+    },
+    {
+        "id": 196,
+        "keyword": "LT3*",
+        "offset": 5050,
+        "is_completed": 0,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:34:43",
+        "status": "pending",
+        "last_run_at": "2026-07-07 04:34:24"
+    },
+    {
+        "id": 197,
+        "keyword": "TPS7*",
+        "offset": 4900,
+        "is_completed": 0,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:35:09",
+        "status": "pending",
+        "last_run_at": "2026-07-07 04:34:43"
+    },
+    {
+        "id": 198,
+        "keyword": "TPS54*",
+        "offset": 900,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:35:12",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:35:09"
+    },
+    {
+        "id": 199,
+        "keyword": "TPS62*",
+        "offset": 1100,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:35:15",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:35:12"
+    },
+    {
+        "id": 200,
+        "keyword": "AMS1117*",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:35:18",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:35:15"
+    },
+    {
+        "id": 201,
+        "keyword": "TL0*",
+        "offset": 4750,
+        "is_completed": 0,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:35:34",
+        "status": "pending",
+        "last_run_at": "2026-07-07 04:35:18"
+    },
+    {
+        "id": 202,
+        "keyword": "TL07*",
+        "offset": 4650,
+        "is_completed": 0,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:36:15",
+        "status": "pending",
+        "last_run_at": "2026-07-07 04:35:34"
+    },
+    {
+        "id": 203,
+        "keyword": "NE55*",
+        "offset": 100,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:36:18",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:36:15"
+    },
+    {
+        "id": 204,
+        "keyword": "OPA2*",
+        "offset": 950,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:36:21",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:36:18"
+    },
+    {
+        "id": 205,
+        "keyword": "OPA4*",
+        "offset": 350,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:36:24",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:36:21"
+    },
+    {
+        "id": 206,
+        "keyword": "AD6*",
+        "offset": 2250,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:36:27",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:36:24"
+    },
+    {
+        "id": 207,
+        "keyword": "AD8*",
+        "offset": 4650,
+        "is_completed": 0,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:37:10",
+        "status": "pending",
+        "last_run_at": "2026-07-07 04:36:27"
+    },
+    {
+        "id": 208,
+        "keyword": "INA2*",
+        "offset": 800,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:37:12",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:37:10"
+    },
+    {
+        "id": 209,
+        "keyword": "ADS1*",
+        "offset": 1050,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:37:15",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:37:12"
+    },
+    {
+        "id": 210,
+        "keyword": "MCP3*",
+        "offset": 600,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:37:18",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:37:15"
+    },
+    {
+        "id": 211,
+        "keyword": "MCP4*",
+        "offset": 1900,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:37:21",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:37:18"
+    },
+    {
+        "id": 212,
+        "keyword": "AD9*",
+        "offset": 2150,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:37:24",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:37:21"
+    },
+    {
+        "id": 213,
+        "keyword": "CC1*",
+        "offset": 4550,
+        "is_completed": 0,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:38:02",
+        "status": "pending",
+        "last_run_at": "2026-07-07 04:37:24"
+    },
+    {
+        "id": 214,
+        "keyword": "ADF4*",
+        "offset": 400,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:38:05",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:38:02"
+    },
+    {
+        "id": 215,
+        "keyword": "ESP8*",
+        "offset": 100,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:38:08",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:38:05"
+    },
+    {
+        "id": 216,
+        "keyword": "ESP3*",
+        "offset": 800,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:38:11",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:38:08"
+    },
+    {
+        "id": 217,
+        "keyword": "ATmega*",
+        "offset": 950,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:38:13",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:38:11"
+    },
+    {
+        "id": 218,
+        "keyword": "ATTiny*",
+        "offset": 650,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:38:16",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:38:13"
+    },
+    {
+        "id": 219,
+        "keyword": "STM32F1*",
+        "offset": 350,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:38:19",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:38:16"
+    },
+    {
+        "id": 220,
+        "keyword": "STM32F4*",
+        "offset": 550,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:38:22",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:38:19"
+    },
+    {
+        "id": 221,
+        "keyword": "PIC16F*",
+        "offset": 4450,
+        "is_completed": 0,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 05:01:10",
+        "status": "pending",
+        "last_run_at": "2026-07-07 04:42:27"
+    },
+    {
+        "id": 222,
+        "keyword": "PIC18F*",
+        "offset": 2250,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:42:27",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:42:24"
+    },
+    {
+        "id": 223,
+        "keyword": "74HC*",
+        "offset": 2850,
+        "is_completed": 0,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:42:24",
+        "status": "pending",
+        "last_run_at": "2026-07-07 04:42:13"
+    },
+    {
+        "id": 224,
+        "keyword": "74HCT*",
+        "offset": 1350,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:42:13",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:42:10"
+    },
+    {
+        "id": 225,
+        "keyword": "CD40*",
+        "offset": 2850,
+        "is_completed": 0,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:42:10",
+        "status": "pending",
+        "last_run_at": "2026-07-07 04:41:33"
+    },
+    {
+        "id": 226,
+        "keyword": "SN74*",
+        "offset": 3200,
+        "is_completed": 0,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 05:01:08",
+        "status": "pending",
+        "last_run_at": "2026-07-07 04:42:23"
+    },
+    {
+        "id": 227,
+        "keyword": "IRF*",
+        "offset": 1200,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:42:23",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:42:16"
+    },
+    {
+        "id": 228,
+        "keyword": "IRL*",
+        "offset": 300,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:42:16",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:42:13"
+    },
+    {
+        "id": 229,
+        "keyword": "AO34*",
+        "offset": 100,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:42:13",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:42:10"
+    },
+    {
+        "id": 230,
+        "keyword": "BSS1*",
+        "offset": 300,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:42:10",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:42:07"
+    },
+    {
+        "id": 231,
+        "keyword": "ULN2*",
+        "offset": 100,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:42:07",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:41:38"
+    },
+    {
+        "id": 232,
+        "keyword": "L29*",
+        "offset": 900,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:41:38",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:41:36"
+    },
+    {
+        "id": 233,
+        "keyword": "PCF8*",
+        "offset": 150,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:41:36",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:41:33"
+    },
+    {
+        "id": 234,
+        "keyword": "MCP23*",
+        "offset": 100,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:41:33",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:41:30"
+    },
+    {
+        "id": 235,
+        "keyword": "DRV8*",
+        "offset": 800,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:41:30",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:41:27"
+    },
+    {
+        "id": 236,
+        "keyword": "MAX4*",
+        "offset": 2500,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:41:27",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:41:24"
+    },
+    {
+        "id": 237,
+        "keyword": "MAX2*",
+        "offset": 4550,
+        "is_completed": 0,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:41:35",
+        "status": "pending",
+        "last_run_at": "2026-07-07 04:41:16"
+    },
+    {
+        "id": 238,
+        "keyword": "XC6*",
+        "offset": 4550,
+        "is_completed": 0,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:42:02",
+        "status": "pending",
+        "last_run_at": "2026-07-07 04:41:35"
+    },
+    {
+        "id": 239,
+        "keyword": "XC7*",
+        "offset": 1000,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:42:05",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:42:02"
+    },
+    {
+        "id": 240,
+        "keyword": "SI53*",
+        "offset": 4500,
+        "is_completed": 0,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:42:16",
+        "status": "pending",
+        "last_run_at": "2026-07-07 04:42:05"
+    },
+    {
+        "id": 241,
+        "keyword": "CP21*",
+        "offset": 250,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:42:19",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:42:16"
+    },
+    {
+        "id": 242,
+        "keyword": "FT23*",
+        "offset": 650,
+        "is_completed": 1,
+        "created_at": "2026-04-27 13:29:36",
+        "updated_at": "2026-07-07 04:42:22",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:42:19"
+    },
+    {
+        "id": 243,
+        "keyword": "FT230XQ-R",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-07 04:42:25",
+        "status": "completed",
+        "last_run_at": "2026-07-07 04:42:22"
+    },
+    {
+        "id": 244,
+        "keyword": "2N7002KT1G",
+        "offset": 50,
+        "is_completed": 0,
+        "created_at": null,
+        "updated_at": "2026-07-07 05:01:17",
+        "status": "running",
+        "last_run_at": "2026-07-08 13:42:34"
+    },
+    {
+        "id": 245,
+        "keyword": "FT232RL-REEL",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:42:34",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:42:31"
+    },
+    {
+        "id": 246,
+        "keyword": "SMMBT2222ALT1G",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:42:31",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:42:28"
+    },
+    {
+        "id": 247,
+        "keyword": "2N7002K-T1-GE3",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:42:28",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:42:24"
+    },
+    {
+        "id": 248,
+        "keyword": "2N7002K",
+        "offset": 100,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:42:24",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:42:21"
+    },
+    {
+        "id": 249,
+        "keyword": "STM32F405RGT6",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:42:21",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:42:18"
+    },
+    {
+        "id": 250,
+        "keyword": "GCM155R71H104KE02D",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:42:18",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:42:15"
+    },
+    {
+        "id": 251,
+        "keyword": "ICM-42688-P",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:42:15",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:42:12"
+    },
+    {
+        "id": 252,
+        "keyword": "STM32F407VGT6",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:42:12",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:42:09"
+    },
+    {
+        "id": 253,
+        "keyword": "BSS138-7-F",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:42:09",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:42:06"
+    },
+    {
+        "id": 254,
+        "keyword": "STM32F103RCT6",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:42:06",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:42:03"
+    },
+    {
+        "id": 255,
+        "keyword": "BAT54SLT1G",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:42:03",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:42:00"
+    },
+    {
+        "id": 256,
+        "keyword": "USBLC6-2SC6",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:42:00",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:41:57"
+    },
+    {
+        "id": 257,
+        "keyword": "GRM21BR61E106KA73L",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:41:57",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:41:54"
+    },
+    {
+        "id": 258,
+        "keyword": "MMBT2907ALT1G",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:41:54",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:41:51"
+    },
+    {
+        "id": 259,
+        "keyword": "FT230XS-R",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:41:51",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:41:48"
+    },
+    {
+        "id": 260,
+        "keyword": "LL4148",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:41:48",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:41:45"
+    },
+    {
+        "id": 261,
+        "keyword": "GRM32EC72A106KE05L",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:41:45",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:41:42"
+    },
+    {
+        "id": 262,
+        "keyword": "CRCW06030000Z0EA",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:41:42",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:41:39"
+    },
+    {
+        "id": 263,
+        "keyword": "RC0402FR-0710KL",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:41:39",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:41:36"
+    },
+    {
+        "id": 264,
+        "keyword": "BSS123",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:41:36",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:41:33"
+    },
+    {
+        "id": 265,
+        "keyword": "CL21A106KOQNNNE",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:41:33",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:41:30"
+    },
+    {
+        "id": 266,
+        "keyword": "C0805C104K5RACTU",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:41:30",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:41:27"
+    },
+    {
+        "id": 267,
+        "keyword": "ISL99390FRZ-TR5935",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:41:27",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:41:24"
+    },
+    {
+        "id": 268,
+        "keyword": "1N4148",
+        "offset": 250,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:41:24",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:41:18"
+    },
+    {
+        "id": 269,
+        "keyword": "BSS138NH6327XTSA2",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:41:18",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:41:15"
+    },
+    {
+        "id": 270,
+        "keyword": "BAT54C-7-F",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:41:15",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:41:12"
+    },
+    {
+        "id": 271,
+        "keyword": "MMBT3906LT1G",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:41:12",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:41:09"
+    },
+    {
+        "id": 272,
+        "keyword": "ULN2003ADR2G",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:41:09",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:41:06"
+    },
+    {
+        "id": 273,
+        "keyword": "REF200AU\/2K5",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:41:06",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:41:03"
+    },
+    {
+        "id": 274,
+        "keyword": "CL21B106KOQNNNE",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:41:03",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:41:00"
+    },
+    {
+        "id": 275,
+        "keyword": "1N4148W-TP",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:41:00",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:40:56"
+    },
+    {
+        "id": 276,
+        "keyword": "GRM21BR61E226ME44L",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:40:56",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:40:53"
+    },
+    {
+        "id": 277,
+        "keyword": "STM32F103C8T6",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:40:53",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:40:50"
+    },
+    {
+        "id": 278,
+        "keyword": "CC0603KRX7R9BB104",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:40:50",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:40:47"
+    },
+    {
+        "id": 279,
+        "keyword": "CL21A106KAYNNNE",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:40:47",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:40:44"
+    },
+    {
+        "id": 280,
+        "keyword": "1N4148WS",
+        "offset": 100,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:40:44",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:40:41"
+    },
+    {
+        "id": 281,
+        "keyword": "CL10B104KB8NNNC",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:40:41",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:40:38"
+    },
+    {
+        "id": 282,
+        "keyword": "CL31B106KBHNNNE",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:40:38",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:40:35"
+    },
+    {
+        "id": 283,
+        "keyword": "2N7002",
+        "offset": 300,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:40:35",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:40:32"
+    },
+    {
+        "id": 284,
+        "keyword": "MMBT2222ALT1G",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:40:32",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:40:30"
+    },
+    {
+        "id": 285,
+        "keyword": "1N4148W-7-F",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:40:30",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:40:27"
+    },
+    {
+        "id": 286,
+        "keyword": "BSS138",
+        "offset": 100,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:40:27",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:40:24"
+    },
+    {
+        "id": 287,
+        "keyword": "STM32F103C8T6TR",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:40:24",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:40:21"
+    },
+    {
+        "id": 288,
+        "keyword": "RC0603FR-0710KL",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:40:21",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:40:18"
+    },
+    {
+        "id": 289,
+        "keyword": "GRM21BR61C106KE15L",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:40:18",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:40:15"
+    },
+    {
+        "id": 290,
+        "keyword": "MBR0540T1G",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:40:15",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:40:12"
+    },
+    {
+        "id": 291,
+        "keyword": "CRCW04020000Z0ED",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:40:12",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:40:09"
+    },
+    {
+        "id": 292,
+        "keyword": "C0603C104K5RACTU",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:40:09",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:40:05"
+    },
+    {
+        "id": 293,
+        "keyword": "1N4148WS-7-F",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:40:05",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:40:02"
+    },
+    {
+        "id": 294,
+        "keyword": "GRM155R71H104KE14D",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:40:02",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:39:59"
+    },
+    {
+        "id": 295,
+        "keyword": "GRM188R61A226ME15D",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:39:59",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:39:56"
+    },
+    {
+        "id": 296,
+        "keyword": "STM32F405RGT6TR",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:39:56",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:39:53"
+    },
+    {
+        "id": 297,
+        "keyword": "GRM155R71C104KA88D",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:39:53",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:39:50"
+    },
+    {
+        "id": 298,
+        "keyword": "GRM31CR71E106KA12L",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:39:50",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:39:47"
+    },
+    {
+        "id": 299,
+        "keyword": "1N4148WT",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:39:47",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:39:44"
+    },
+    {
+        "id": 300,
+        "keyword": "FT4232HL-REEL",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:39:44",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:39:41"
+    },
+    {
+        "id": 301,
+        "keyword": "1N4148WT-7",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:39:41",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:39:38"
+    },
+    {
+        "id": 302,
+        "keyword": "BSS138W-7-F",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:39:38",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:39:35"
+    },
+    {
+        "id": 303,
+        "keyword": "BAV99LT1G",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:39:35",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:39:32"
+    },
+    {
+        "id": 304,
+        "keyword": "CDSOT23-SM712",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:39:32",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:39:29"
+    },
+    {
+        "id": 305,
+        "keyword": "BSS123LT1G",
+        "offset": 50,
+        "is_completed": 1,
+        "created_at": null,
+        "updated_at": "2026-07-08 13:39:29",
+        "status": "completed",
+        "last_run_at": "2026-07-08 13:39:26"
+    }
+]

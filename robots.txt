@@ -1,0 +1,37 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /supplier/
+Disallow: /supplier-dev/
+Disallow: /cache
+Disallow: /shop
+Disallow: /manufacturers-api
+Disallow: /get-level2/
+Disallow: /bom-upload
+Disallow: /bom-process
+Disallow: /track-part-search
+Disallow: /submit-track-order
+Disallow: /get-a-quote-submit
+Disallow: /quote-thank-you
+Disallow: /track-order
+Disallow: /login
+Disallow: /sign-up
+Disallow: /test-expand
+Disallow: /track-session-duration
+
+User-agent: Googlebot
+Disallow: /available-stock?*
+Disallow: /category/*?*
+
+Allow: /product/
+Allow: /category/
+Allow: /manufacturer/
+Allow: /blog/
+Allow: /news-alerts
+Allow: /about-us
+Allow: /contact-us
+Allow: /industries-we-serve
+Allow: /quality-assurance
+Allow: /terms-and-conditions
+Allow: /manufacturers
+
+Sitemap: https://simplytronix.com/sitemap.xml
