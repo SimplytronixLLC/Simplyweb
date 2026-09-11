@@ -16,3 +16,4 @@ error_log
 *.bak[0-9]
 database.sqlite
 /new/
+*.backup.*
