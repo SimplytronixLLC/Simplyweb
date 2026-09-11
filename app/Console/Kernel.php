@@ -36,7 +36,30 @@ class Kernel extends ConsoleKernel
                 ->where('setting_key', 'digikey_sync_running')
                 ->value('setting_value');
 
-            if ($running) return;
+            if ($running) {
+                $pid = (int) DB::table('system_settings')
+                    ->where('setting_key', 'digikey_sync_pid')
+                    ->value('setting_value');
+
+                $pidAlive = $pid > 0 && (
+                    function_exists('posix_kill')
+                        ? posix_kill($pid, 0)
+                        : (function () use ($pid) {
+                            $output = [];
+                            @exec("ps -p {$pid} -o pid=", $output);
+                            return !empty($output);
+                        })()
+                );
+
+                if ($pidAlive) {
+                    return;
+                }
+
+                \Illuminate\Support\Facades\Log::warning(
+                    "DigiKey sync lock was held for PID {$pid}, which is no longer running - ".
+                    "treating as stale from a killed process and proceeding immediately."
+                );
+            }
 
             $phpBinary = '/usr/local/bin/php';
             $artisan   = base_path('artisan');

@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="shUNSrnGelHNLCFmanqkSPvPfum5FnECrQlT0-dis4s" />
-    <meta name="robots" content="index, follow">
+    @if (! $__env->hasSection('seo'))
+        <meta name="robots" content="index, follow">
+    @endif
 
     @hasSection('seo')
         @yield('seo')

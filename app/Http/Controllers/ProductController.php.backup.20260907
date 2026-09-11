@@ -456,32 +456,10 @@ $intentText = $quantity > 0 ? 'In Stock. Ships same day.' : 'Sourced to order. C
             ->map(fn($s) => "{$s['value']} {$s['name']}")
             ->implode(', ');
         $catLower = strtolower($category ?: 'component');
-        $article  = $this->article($catLower);
-        $seed     = crc32($mpn . '|shortdesc');
-
-        // Every variant keeps a generic noun after {category} (e.g.
-        // "component"/"part") or uses a construction that doesn't need
-        // singular/plural agreement, since category names are often plural
-        // ("Capacitors", "Motor Drivers").
-        $withHighlights = [
-            "{$mpn} is {$article} {$catLower} component from {$manufacturer} with {$highlights}.",
-            "Manufactured by {$manufacturer}, {$mpn} is {$article} {$catLower} component featuring {$highlights}.",
-            "{$mpn} ({$manufacturer}) is a {$catLower} part with {$highlights}.",
-            "This {$catLower} part from {$manufacturer}, part number {$mpn}, offers {$highlights}.",
-            "{$manufacturer}'s {$mpn} is {$article} {$catLower} component built with {$highlights}.",
-            "Part {$mpn} from {$manufacturer} is specified with {$highlights}.",
-        ];
-        $noHighlights = [
-            "{$mpn} is {$article} {$catLower} component from {$manufacturer}.",
-            "Manufactured by {$manufacturer}, {$mpn} is {$article} {$catLower} component.",
-            "{$mpn} ({$manufacturer}) is a {$catLower} part.",
-            "This {$catLower} part is manufactured by {$manufacturer} under part number {$mpn}.",
-            "{$manufacturer}'s {$mpn} is {$article} {$catLower} component.",
-            "Part {$mpn} from {$manufacturer} is classified under {$catLower}.",
-        ];
-
-        $pool = $highlights ? $withHighlights : $noHighlights;
-        return $pool[$seed % count($pool)];
+        $article = $this->article($catLower);
+        return $highlights
+            ? "{$mpn} is {$article} {$catLower} component from {$manufacturer} with {$highlights}."
+            : "{$mpn} is {$article} {$catLower} component from {$manufacturer}.";
     }
 
     private function generateMetaDescriptionFragment($specs)
@@ -523,26 +501,17 @@ $intentText = $quantity > 0 ? 'In Stock. Ships same day.' : 'Sourced to order. C
             ->take(6)
             ->values();
 
-        // Independent seeds per choice (rather than bit-shifts of one seed)
-        // so the opener/spec-intro/closer picks aren't correlated with
-        // each other across the catalog.
-        $seedOpener = crc32($mpn . '|opener');
-        $seedIntro  = crc32($mpn . '|specintro');
-        $seedCloser = crc32($mpn . '|closer');
+        $seed = crc32($mpn);
         $catLower = strtolower($category ?: 'component');
         $article = $this->article($catLower);
 
         $openers = [
-            "{$mpn} is {$article} {$catLower} component manufactured by {$manufacturer}.",
-            "Manufactured by {$manufacturer}, the {$mpn} is classified under {$catLower}.",
+            "{$mpn} is {$article} {$catLower} manufactured by {$manufacturer}.",
+            "Manufactured by {$manufacturer}, the {$mpn} is classified as {$article} {$catLower}.",
             "The {$mpn} from {$manufacturer} falls under the {$catLower} category.",
-            "{$manufacturer}'s {$mpn} is a widely used {$catLower} part in electronic designs.",
-            "{$mpn} is a {$catLower} part produced by {$manufacturer} for use across a range of applications.",
-            "As {$article} {$catLower} component, the {$mpn} is manufactured and supplied by {$manufacturer}.",
-            "{$manufacturer} manufactures the {$mpn}, {$article} {$catLower} part used in electronic assemblies.",
-            "The {$mpn}, made by {$manufacturer}, belongs to the {$catLower} product category.",
+            "{$manufacturer}'s {$mpn} is a widely used {$catLower} in electronic designs.",
         ];
-        $sentence1 = $openers[$seedOpener % count($openers)];
+        $sentence1 = $openers[$seed % count($openers)];
 
         $sentence2 = '';
         if ($highlightSpecs->isNotEmpty()) {
@@ -550,7 +519,7 @@ $intentText = $quantity > 0 ? 'In Stock. Ships same day.' : 'Sourced to order. C
                 $label = $this->humanizeSpecName($s['name']);
                 $value = trim($s['value']);
                 $value = rtrim($value, ", ");
-                return "{$label}: {$value}";
+                return "a {$label} of {$value}";
             })->all();
 
             $last   = array_pop($phrases);
@@ -563,12 +532,8 @@ $intentText = $quantity > 0 ? 'In Stock. Ships same day.' : 'Sourced to order. C
                 "Key specifications include {$joined}.",
                 "Notable characteristics of this part include {$joined}.",
                 "This component is defined by {$joined}.",
-                "Technical specifications for this part include {$joined}.",
-                "Among its key specs are {$joined}.",
-                "This part is specified with {$joined}.",
-                "Its datasheet lists {$joined}.",
             ];
-            $sentence2 = $specIntros[$seedIntro % count($specIntros)];
+            $sentence2 = $specIntros[($seed >> 3) % count($specIntros)];
         }
 
         $tail = [];
@@ -594,12 +559,8 @@ $intentText = $quantity > 0 ? 'In Stock. Ships same day.' : 'Sourced to order. C
             "You can source {$mpn} through Simplytronix, with fast shipping and verified authenticity.",
             "Simplytronix carries {$mpn} in stock, backed by a genuine parts guarantee and quick dispatch.",
             "Order {$mpn} from Simplytronix for authenticated stock and same-day order processing.",
-            "Simplytronix supplies {$mpn} with same-day shipping and guaranteed authenticity.",
-            "{$mpn} is available through Simplytronix, sourced and verified for authenticity.",
-            "Get {$mpn} from Simplytronix, shipped same day with a genuine parts guarantee.",
-            "Simplytronix offers {$mpn} in stock, verified authentic and ready for same-day dispatch.",
         ];
-        $sentence4 = $closers[$seedCloser % count($closers)];
+        $sentence4 = $closers[($seed >> 6) % count($closers)];
 
         return trim(implode(' ', array_filter([$sentence1, $sentence2, $sentence3, $sentence4])));
     }

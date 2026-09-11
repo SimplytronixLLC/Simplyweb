@@ -18,8 +18,13 @@ class CrmSyncDaily extends Command
     {
         $this->importQuotes();
         $this->importHighEngagementVisitors();
-        $this->enrollQuoteLeadsAfter30Days();
-        $this->sendDueFollowups();
+
+        if (config('crm.followup_cadence_enabled', false)) {
+            $this->enrollQuoteLeadsAfter30Days();
+            $this->sendDueFollowups();
+        } else {
+            $this->info('RFQ follow-up cadence is disabled (crm.followup_cadence_enabled) - skipping enrollment and sends.');
+        }
 
         return self::SUCCESS;
     }

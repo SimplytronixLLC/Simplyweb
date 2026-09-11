@@ -5,6 +5,13 @@
 RedirectMatch 404 /\.git
 RedirectMatch 404 /\.env
 RedirectMatch 404 /\.htpasswd
+# ── Block loose diagnostic/test scripts (kept on disk, not public) ──
+RedirectMatch 404 ^/check_contact\.php$
+RedirectMatch 404 ^/reset_false_cadences\.php$
+RedirectMatch 404 ^/phpcheck\.php$
+RedirectMatch 404 ^/opcache-clear\.php$
+RedirectMatch 404 ^/twilio-test\.php$
+RedirectMatch 404 ^/digikey_test\.php$
 # ── Force HTTPS ────────────────────────────────────────────────
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>

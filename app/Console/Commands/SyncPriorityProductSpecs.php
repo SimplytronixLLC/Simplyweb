@@ -160,7 +160,7 @@ class SyncPriorityProductSpecs extends Command implements SignalableCommandInter
             $this->info('================================================');
             $this->line("Started At        : {$startedAt}");
             $this->line("Daily Limit       : {$limit}");
-            $this->line("Rate Limit        : 1 request every 0.5 sec");
+            $this->line("Rate Limit        : 1 request every 0.75 sec (33% margin below DigiKey's 120/min burst limit)");
             $this->line("Resume From ID >  : {$lastId}");
             $this->line("Categories        : " . count($this->priorityCategories));
             $this->info('================================================');
@@ -323,8 +323,8 @@ class SyncPriorityProductSpecs extends Command implements SignalableCommandInter
                     $this->line('------------------------------------------------');
 
                     if ($checked < $limit) {
-                        $this->line('Sleeping 0.5 seconds...');
-                        if ($this->interruptibleSleep(500)) {
+                        $this->line('Sleeping 0.75 seconds...');
+                        if ($this->interruptibleSleep(750)) {
                             return false;
                         }
                     }

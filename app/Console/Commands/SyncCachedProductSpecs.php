@@ -148,7 +148,7 @@ class SyncCachedProductSpecs extends Command implements SignalableCommandInterfa
             $this->info('================================================');
             $this->line("Started At        : {$startedAt}");
             $this->line("Daily Limit       : {$limit}");
-            $this->line("Rate Limit        : 1 request every 0.5 sec");
+            $this->line("Rate Limit        : 1 request every 0.75 sec (33% margin below DigiKey's 120/min burst limit)");
             $this->line("Resume From ID >  : {$lastId}");
             $this->line("Rotate after      : " . DigiKeyService::CONSECUTIVE_429_THRESHOLD . " consecutive 429s");
             $this->info('================================================');
@@ -318,11 +318,11 @@ class SyncCachedProductSpecs extends Command implements SignalableCommandInterfa
                     $this->line("ACTIVE KEY      : #{$service->activeIndex}");
                     $this->line('------------------------------------------------');
 
-                    // ── 0.5-second rate-limit sleep ───────────────────────
+                    // ── 0.75-second rate-limit sleep (33% margin below DigiKey's 120/min burst limit) ───────────────────────
 
                     if ($checked < $limit) {
-                        $this->line('Sleeping 0.5 seconds...');
-                        if ($this->interruptibleSleep(500)) {
+                        $this->line('Sleeping 0.75 seconds...');
+                        if ($this->interruptibleSleep(750)) {
                             return false;
                         }
                     }

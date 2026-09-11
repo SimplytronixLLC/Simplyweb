@@ -39,6 +39,16 @@ class DigiKeyService
      */
     public const EXHAUSTION_THRESHOLD_SECONDS = 10800;
 
+    /**
+     * Treat a key as "full for today" once it hits this many calls,
+     * rather than DigiKey's actual 1,000/day limit. The buffer absorbs
+     * the small race window between reserving a key and the ApiUsage
+     * row for that call actually being written, so concurrent
+     * processes (sync-specs + sync-specs-priority running at once)
+     * can't both slip a call in right at the boundary and overshoot.
+     */
+    public const SAFE_DAILY_CAP = 990;
+
     public $debugCallback = null;
 
     // ── Boot ─────────────────────────────────────────────────────────────────
@@ -284,6 +294,77 @@ class DigiKeyService
         return $statuses;
     }
 
+    // ── Proactive, cross-command-safe key reservation ──────────────────────────
+
+    /**
+     * Pick a key with real capacity left today and activate it, BEFORE
+     * making the call - rather than waiting for DigiKey to say no.
+     *
+     * Safe across concurrent processes (e.g. sync-specs and
+     * sync-specs-priority running at once): the selection itself is
+     * protected by a real cross-process lock, and usage is read live
+     * from the ApiUsage table rather than a cached counter that could
+     * drift or race.
+     *
+     * Returns true if a usable key was found and activated, false if
+     * every key is at/over the safe cap or currently 429-blocked.
+     */
+    public function reserveAvailableKey(): bool
+    {
+        $lock = Cache::lock('digikey_key_reservation', 10);
+
+        try {
+            $lock->block(5);
+        } catch (\Illuminate\Contracts\Cache\LockTimeoutException $e) {
+            $this->debug('Could not acquire key-reservation lock within 5s - proceeding with last-known active key');
+            return true;
+        }
+
+        try {
+            $utcDayStart = now('UTC')->startOfDay();
+
+            $usageByKey = ApiUsage::where('provider', 'digikey')
+                ->where('called_at', '>=', $utcDayStart)
+                ->selectRaw('key_index, count(*) as calls')
+                ->groupBy('key_index')
+                ->pluck('calls', 'key_index');
+
+            $best = null;
+            $bestUsage = null;
+
+            foreach (array_keys($this->keys) as $index) {
+                $used = (int) ($usageByKey[$index] ?? 0);
+
+                if ($used >= self::SAFE_DAILY_CAP) {
+                    continue;
+                }
+
+                $blockedUntil = Cache::get($this->blockedUntilKey($index));
+                if ($blockedUntil && now()->lt($blockedUntil)) {
+                    continue;
+                }
+
+                if ($best === null || $used < $bestUsage) {
+                    $best = $index;
+                    $bestUsage = $used;
+                }
+            }
+
+            if ($best === null) {
+                $this->debug('reserveAvailableKey: every key is at/over the safe cap or blocked');
+                return false;
+            }
+
+            $this->activeIndex = $best;
+            Cache::put('digikey_active_key_index', $best, now()->addDays(1));
+            $this->debug("reserveAvailableKey: selected key #{$best} ({$bestUsage}/" . self::SAFE_DAILY_CAP . " used today)");
+
+            return true;
+        } finally {
+            $lock->release();
+        }
+    }
+
     // ── Core API call with auto-rotate ────────────────────────────────────────
 
     /**
@@ -306,6 +387,11 @@ class DigiKeyService
 
     protected function makeProductRequest(string $url): ?\Illuminate\Http\Client\Response
     {
+        if (!$this->reserveAvailableKey()) {
+            $this->debug('makeProductRequest: no key has capacity left today - aborting call');
+            return null;
+        }
+
         $token = $this->getAccessToken();
         if (!$token) return null;
 
